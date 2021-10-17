@@ -1,0 +1,61 @@
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-bottom: #a3a3a3 solid 1px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.day {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 135px;
+  font-size: 14px;
+  color: #595959;
+}
+
+.cat {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 50px 0 0;
+  font-size: 11px;
+  background-color: #195ba9;
+  color: #fff;
+  padding: 1em;
+}
+
+.title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 18px;
+  color: #595959;
+}
+
+@media only screen and (max-width: 900px) {
+  .cat {
+    margin-top: 10px;
+  }
+  .title {
+    margin-top: 10px;
+  }
+  .day {
+    margin-top: 10px;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=Card.module.css.map */

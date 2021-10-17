@@ -1,7 +1,12 @@
 // pages/blog/[id].js
 import Layout from "../../components/Layout";
 import { client } from "../../libs/client";
+import { useRouter } from 'next/router'
 export default function BlogId({ news}) {
+  const router = useRouter()
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
   return (
       <Layout>
        <h2 className="newstitle">NEWS</h2>
